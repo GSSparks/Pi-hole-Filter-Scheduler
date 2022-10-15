@@ -4,6 +4,13 @@ I use these two sytemd timers and services to turn on and off Pi-Hole filters at
 
 The service executes a sqlite3 command on Pi-Hole's database setting enable to 1 or 0. 1 = filter on, and 0 = filter off.
 
+<h2>How to use:</h2>
 <ul>
-<li>The Pi-Hole Filter to block all access is [:alnum:].[:alnum:]</li>
+  <li>Create a new group called 'internet-access-scheduler'</li>
+  <li>Add clients that you want to schedule to this group</li>
+  <li>Create a Pi-Hole regex filter to block all access [:alnum:].[:alnum:]</li>
+  <li>Add the internet-access-scheduler group to this filter</li>
+  <li>Edit the internet-access-schedule-off.service and internet-access-schedule-on.service files to reflect the group you created. Put your newly created group id where it says group_id. <bold>HINT: </bold>You can find the group id by hovering your mouse over the group on the Pi-Hole web interface.</li>
+  <li>Finally, change the times in the internet-access schedule-off(on).timer to suit your needs.</li>
+  <li>Sit back and smile while your children kick and scream because their internet all of the sudden was blocked at 7:00 pm.</li>
 </ul>
