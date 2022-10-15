@@ -2,7 +2,7 @@
 Description=Turn access to dns on at 7:00 am
 
 [Timer]
-OnCalendar=*-*-* 7:00:00
+OnCalendar=7:00:00
 Persistent=true
 
 [Install]
