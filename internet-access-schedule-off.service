@@ -3,6 +3,6 @@ Description=Turn Internet Access off
 
 [Service]
 Type=oneshot
-ExecStart=sqlite3 /etc/pihole/gravity.db "Update domainlist SET enabled = 1 WHERE type IN (1,3) and id in (Select domainlist_id from domainlist_by_group where group_id=7);"
+ExecStart=sqlite3 /etc/pihole/gravity.db "Update domainlist SET enabled = 1 WHERE type IN (3) and id in (61, 62);"
 ExecStart=pihole restartdns reload-lists
 
