@@ -1,0 +1,14 @@
+[Unit]
+Description=Turn access to dns off
+
+[Timer]
+OnCalendar=Sun 19:00:00
+OnCalendar=Mon 19:00:00
+OnCalendar=Tue..Thu 19:00:00
+OnCalendar=Fri 19:00:00
+OnCalendar=Sat 19:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
