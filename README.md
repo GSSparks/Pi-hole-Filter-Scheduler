@@ -14,4 +14,4 @@ The service executes a sqlite3 command on Pi-Hole's database setting enable to 1
   <li>Finally, change the times in the internet-access schedule-off(on).timer to suit your needs.</li>
   <li>Sit back and smile while your children kick and scream because their internet all of the sudden was blocked at 7:00 pm.</li>
 </ul>
-Visit my post about this scheduler <a href="https://garysparks.info/scheduling-a-pi-hole-internet-access-filter/" >here</a> for step by step instructions.
+Visit my post about this scheduler <a href="https://garysparks.info/post/scheduling-a-pi-hole-internet-access-filter/" >here</a> for step by step instructions.
